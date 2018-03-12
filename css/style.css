@@ -1,10 +1,18 @@
+/* ==== Reset start ===== */
 *{
 	box-sizing: border-box;
 }
 body{
 	margin: 0;
+	background-color: #fff;
+	font:  300 15/1 'Open Sans', sans-serif;
+	color:#777;
 }
 h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	font-weight: normal;
+}
+p{
 	margin: 0;
 }
 a{
@@ -27,6 +35,108 @@ button {
 	border: none;
 	cursor: pointer;
 }
+blockquote{
+	margin: 0;
+}
+/* ==== Reset end ===== */
+/* ==== Default components start ===== */
+.default-section{
+	padding: 135px 0;
+}
+.small-section{
+	padding: 70px 0;
+}
+.container{
+	max-width: 1200px ;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container-fluid{
+	padding: 0 15px;
+}
+.title{
+	font-family: 'Dosis',sans-serif;
+	text-transform: uppercase;
+	color: #111;
+}
+.title.title-white {
+	color: #fff;
+}
+.title.section-title{
+	font-size: 18px;
+	letter-spacing: 0.5em;
+	margin-bottom: 75px;
+	font-weight: 400;
+}
+.title.section-title-light{
+	font-size: 18px;
+	letter-spacing: 0.3em;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.default-text{
+	font-size: 15px;
+	line-height: 1.7333;
+	font-weight:300;
+}
+blockquote,.blockquote{
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+blockquote span,
+.blockquote span{
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+.btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 2px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
 
+.btn.btn-default {
+	background-color: #e5e5e5;
+	color: #777;
+}
 
+.btn.btn-default:hover {
+	background-color: #d1d0d0;
+}
+
+.btn.btn-black {
+	background-color: #323232;
+	color: #fff;
+}
+
+.btn.btn-black:hover {
+	background-color: #000;
+}
+
+.btn.btn-xs {
+	padding: 7px 15px;
+	font-size: 11px;
+}
+/* ==== Default components end ===== */
+/* ==== Default classes start ===== */
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.bg-black{
+	background-color: #111;	
+}
+.bg-grey{
+	background-color: #f8f8f8;
+}
+/* ==== Default classes end ===== */
 
