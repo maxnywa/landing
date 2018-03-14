@@ -3,12 +3,13 @@
 	box-sizing: border-box;
 }
 body{
+	font:  300 15px/1 'Open Sans', sans-serif;
+	color:#777;
 	margin: 0;
 	background-color: #fff;
-	font:  300 15/1 'Open Sans', sans-serif;
-	color:#777;
+	
 }
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	font-weight: normal;
 }
@@ -39,6 +40,25 @@ blockquote{
 	margin: 0;
 }
 /* ==== Reset end ===== */
+
+/* ==== Default classes start ===== */
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.bg-black{
+	background-color: #111;	
+}
+.bg-grey{
+	background-color: #f8f8f8;
+}
+/* ==== Default classes end ===== */
+
 /* ==== Default components start ===== */
 .default-section{
 	padding: 135px 0;
@@ -91,12 +111,11 @@ blockquote span,
 	letter-spacing: .2em;
 }
 .btn {
+	font: 400 12px/1 'Open Sans', sans-serif;
 	display: inline-block;
 	padding: 12px 20px;
 	border-radius: 2px;
-	font-size: 12px;
 	text-transform: uppercase;
-	font-weight: 400;
 }
 
 .btn.btn-default {
@@ -121,22 +140,70 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
-/* ==== Default components end ===== */
-/* ==== Default classes start ===== */
-.text-right{
-	text-align: right;
+.header{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	z-index: 99;
+	padding: 25px 0;
+	font-size: 12px;
+	overflow: hidden;
 }
-.text-center{
-	text-align: center;
+.header .logo{
+	float: left;
+	padding: 5px 0;
+	border-bottom: 1px solid #fff;
 }
-.text-justify{
-	text-align: justify;
+.header .logo span{
+	font-weight:600;
+	letter-spacing: 0.3em; 
 }
-.bg-black{
-	background-color: #111;	
+.header .header-nav{
+	float: right;
 }
-.bg-grey{
-	background-color: #f8f8f8;
+.header .header-nav li{
+	float: left;
+	font-weight: normal;
+	line-height: 28px;
 }
-/* ==== Default classes end ===== */
+.header .header-nav li + li {
+	margin-left: 20px;
+}
 
+/* ==== Default components end ===== */
+
+/* ==== Customs styles start ===== */
+.inner{
+	background: #000 url('../img/bg.jpg') no-repeat center/cover;
+	height: 100vh;
+	text-align: center;
+	padding-top: 92px;
+}
+
+.inner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left:-4px;
+}
+.inner-content{
+    display: inline-block;
+	vertical-align: middle;
+	color:rgba(254, 254, 254, 0.9);
+}
+.inner-content h1{
+	font-size: 30px;
+	letter-spacing: 1.7em;
+	margin-bottom: 100px;
+	text-indent: 1.7em;
+	color:rgba(254, 254, 254, 0.9);
+}
+/* или как вариант задать цвет текста через .inner-content>*{}
+не знаю как лучше */
+.inner-content span{
+	font-size: 19px;
+}
+
+/* ==== Customs styles end ===== */
