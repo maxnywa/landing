@@ -62,7 +62,6 @@ blockquote{
 /* ==== Default components start ===== */
 .default-section{
 	padding: 135px 0;
-	overflow: hidden;/* временно */
 }
 .small-section{
 	padding: 70px 0;
@@ -112,11 +111,12 @@ blockquote span,
 	letter-spacing: .2em;
 }
 .btn {
-	font: 400 12px/1 'Open Sans', sans-serif;
+	font: 400 13px/1 'Open Sans', sans-serif;
 	display: inline-block;
 	padding: 12px 20px;
 	border-radius: 2px;
 	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 .btn.btn-default {
@@ -182,7 +182,7 @@ blockquote span,
 	background: #000 url('../img/bg.jpg') no-repeat center/cover;
 	height: 100vh;
 	text-align: center;
-	padding-top: 92px;
+	padding-top: 83px;
 }
 
 .inner::before {
@@ -213,6 +213,7 @@ blockquote span,
 	overflow: hidden;
 	width: 100%;
 	margin-top: 100px;
+
 }
 .team-item .team-item-img{
 	margin-bottom: 30px;
@@ -226,6 +227,7 @@ blockquote span,
 	height: 100%;
 	background-color: #000;
 	top: 0;
+	transition: all .2s linear;
 
 }
 .team-item .team-item-img:hover .team-item-skills{
@@ -259,5 +261,29 @@ blockquote span,
 
 
 /* ------about studio-------- */
+
+/* -----like-our-works----- */
+.like-our-works .btn{
+	color: #111;
+}
+/* ------like-our-works----- */
+/* -------why-choose-us------ */
+.why-choose-us .row{
+	margin-bottom: 75px;
+}
+.why-choose-us .icon{
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+.why-choose-us .icons-title{
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0.4em;
+	margin-bottom: 30px;
+}
+
+
+/* -------why-choose-us------ */
+
 
 /* ==== Customs styles end ===== */

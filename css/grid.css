@@ -2,6 +2,12 @@
     margin-left: -15px;
     margin-right: -15px;
 }
+.row::after{
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
 .col {
     position: relative;
     min-height: 1px;
