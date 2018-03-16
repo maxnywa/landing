@@ -62,6 +62,7 @@ blockquote{
 /* ==== Default components start ===== */
 .default-section{
 	padding: 135px 0;
+	overflow: hidden;/* временно */
 }
 .small-section{
 	padding: 70px 0;
@@ -175,6 +176,8 @@ blockquote span,
 /* ==== Default components end ===== */
 
 /* ==== Customs styles start ===== */
+
+/* ------inner--------- */
 .inner{
 	background: #000 url('../img/bg.jpg') no-repeat center/cover;
 	height: 100vh;
@@ -201,10 +204,60 @@ blockquote span,
 	text-indent: 1.7em;
 	color:rgba(254, 254, 254, 0.9);
 }
-/* или как вариант задать цвет текста через .inner-content>*{}
-не знаю как лучше */
 .inner-content span{
 	font-size: 19px;
 }
+/* ------inner--------- */
+/* ------about studio-------- */
+.team-wrapper{
+	overflow: hidden;
+	width: 100%;
+	margin-top: 100px;
+}
+.team-item .team-item-img{
+	margin-bottom: 30px;
+	position: relative;
+}
+.team-item .team-item-skills{
+	opacity: 0;
+	padding: 40px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	top: 0;
+
+}
+.team-item .team-item-img:hover .team-item-skills{
+	opacity: 1;
+}
+.team-item .team-item-skills .skills-info{
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.615;
+}
+.team-item .team-item-info{
+	text-transform: uppercase;
+	font-family:'Dosis';
+	font-weight: normal;
+	letter-spacing: 0.4em;
+}
+.team-item .team-item-info span{
+	display: block;
+	margin-bottom: 15px;
+}
+/*margin-bottom: 15px; добавляю на span, а не .team-item-name
+ на случай добавления информации после .team-item-role.
+ Если это лишнее, то можно только на name */
+
+.team-item .team-item-name{
+	font-size: 15px;
+}
+.team-item .team-item-role{
+	font-size: 12px;
+}
+
+
+/* ------about studio-------- */
 
 /* ==== Customs styles end ===== */
