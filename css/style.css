@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus{
+	outline: none;
+}
 body{
 	font:  300 15px/1 'Open Sans', sans-serif;
 	color:#777;
@@ -31,9 +34,16 @@ ul, ol{
 img {
 	max-width: 100%;
 }
-button {
+button, input, 
+textarea {
 	outline: none;
 	border: none;
+}
+textarea{
+	resize: vertical;
+}
+button,
+input[type='submit']{
 	cursor: pointer;
 }
 blockquote{
@@ -209,6 +219,9 @@ blockquote span,
 }
 /* ------inner--------- */
 /* ------about studio-------- */
+.about-stydio.default-section{
+	border-bottom: 1px solid rgba(236,236,236,0.92);
+}
 .team-wrapper{
 	overflow: hidden;
 	width: 100%;
@@ -260,14 +273,83 @@ blockquote span,
 }
 
 
-/* ------about studio-------- */
+/* ------about studio end------ */
 
-/* -----like-our-works----- */
+/* ------services------- */
+#tabs .tabs-nav li{
+	margin-bottom: 75px;
+}
+#tabs .tabs-nav li{
+	float:left;
+	width: 20%;
+	text-align: center;
+	color: #a7a7a7;
+}
+#tabs .tabs-nav li span{
+	display: block;
+}
+#tabs .tabs-nav .icon{
+	font-size: 48px;
+	margin-bottom: 35px;
+}
+#tabs .tabs-nav li .icon-title{
+	font-family: 'Dosis',sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.4em;
+}
+#tabs .tabs-nav .ui-state-active{
+	color: #111;
+}
+
+/* ------services end------ */
+
+/* ------lets-talk-content------ */
+.lets-talk-content{
+	padding: 140px 0;
+}
+.lets-talk-content p{
+	color: rgba(255, 255, 255,.7);
+	margin-bottom: 35px;
+}
+.lets-talk-content .btn {
+	color:#111;
+}
+.lets-talk .lets-talk-img{
+	margin-top: -32px;
+}
+/* ------lets-talk-content end------ */
+
+/* ------portfolio------ */
+.portfolio p{
+	max-width: 750px;
+	margin: 0 auto;
+}
+#tabs-portfolio .tabs-nav{
+	margin-bottom: 50px;
+}
+#tabs-portfolio .tabs-nav li{
+	display: inline-block;
+}
+#tabs-portfolio .tabs-nav li+li{
+	margin-left: 60px;
+}
+#tabs-portfolio .tabs-nav li .title{
+	font-size: 13px;
+	letter-spacing: 0.4em;
+	color: rgba(17,17,17,0.5);
+}
+
+/* ------portfolio end------ */
+
+
+/* ------like-our-works------ */
 .like-our-works .btn{
 	color: #111;
 }
-/* ------like-our-works----- */
-/* -------why-choose-us------ */
+/* ------like-our-works end------ */
+
+/* ------why-choose-us------ */
 .why-choose-us .row{
 	margin-bottom: 75px;
 }
@@ -282,8 +364,6 @@ blockquote span,
 	margin-bottom: 30px;
 }
 
-
-/* -------why-choose-us------ */
-
+/* ------why-choose-us end ------ */
 
 /* ==== Customs styles end ===== */
