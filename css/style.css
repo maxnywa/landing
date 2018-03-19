@@ -271,8 +271,6 @@ blockquote span,
 .team-item .team-item-role{
 	font-size: 12px;
 }
-
-
 /* ------about studio end------ */
 
 /* ------services------- */
@@ -330,14 +328,35 @@ blockquote span,
 }
 #tabs-portfolio .tabs-nav li{
 	display: inline-block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.4em;
+	color: rgba(17,17,17,0.5);
 }
 #tabs-portfolio .tabs-nav li+li{
 	margin-left: 60px;
 }
-#tabs-portfolio .tabs-nav li .title{
-	font-size: 13px;
-	letter-spacing: 0.4em;
-	color: rgba(17,17,17,0.5);
+#tabs-portfolio .tabs-nav .ui-state-active{
+	color:#111;
+}
+#tabs-portfolio .row{
+	margin: 0 -4px;
+	margin-bottom: 8px;
+}
+#tabs-portfolio .tabs-item {
+	width: 33.3333%;
+	height: 340px;
+	float: left;
+	padding: 0 4px;
+}
+#tabs-portfolio .tabs-item img{
+	max-height: 100%;
+	width: 100%;
+	filter: grayscale(100%)
+}
+#tabs-portfolio .tabs-item:hover img{
+	filter: grayscale(0);
 }
 
 /* ------portfolio end------ */
@@ -365,5 +384,43 @@ blockquote span,
 }
 
 /* ------why-choose-us end ------ */
+
+/* ------ latest-news ------ */
+.latest-news .title.section-title a{
+	float: right;
+}
+.latest-news .title.section-title a,
+.latest-news .speaker-and-date{
+	color: #999;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+}
+.latest-news-img{
+	max-height: 200px;
+	margin-bottom: 30px;
+}
+.latest-news-img img{
+	filter: grayscale(100%);
+}
+.latest-news-img:hover img{
+	filter: grayscale(0);
+}
+.latest-news .news-title,
+.latest-news .speaker-and-date{
+	font-family: 'Dosis',sans-serif;
+	text-transform: uppercase;
+}	
+.latest-news .news-title{
+	font-size: 15px;
+	color: #777;
+	letter-spacing: 0.2em;
+	margin-bottom: 15px;
+}
+.latest-news p{
+	margin: 30px 0;
+	color: #777;
+}
+
+/* ------latest-news end ------ */
 
 /* ==== Customs styles end ===== */
