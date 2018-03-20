@@ -120,6 +120,8 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+
+/*----- Buttons ----- */
 .btn {
 	font: 400 13px/1 'Open Sans', sans-serif;
 	display: inline-block;
@@ -151,6 +153,30 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+/*----- Buttons end ----- */
+/* ----- Input----- */
+
+.form-control{
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding: 0 13px;
+}
+.form-control:focus{
+	border-color: #111;
+}
+textarea.form-control{
+	min-height: 82px;
+	padding-top: 10px;
+}
+/* ----- Input end ---- */
 .header{
 	position: fixed;
 	left: 0;
@@ -184,6 +210,15 @@ blockquote span,
 }
 
 /* ==== Default components end ===== */
+
+/* ==== Guide-section start ===== */
+.guide-section form .form-control + .form-control{
+	margin-top: 10px;
+}
+
+/* ==== Guide-section end ===== */
+
+
 
 /* ==== Customs styles start ===== */
 
