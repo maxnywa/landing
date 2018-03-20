@@ -130,7 +130,10 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
-
+.btn[disabled]{
+	cursor: not-allowed;
+	opacity: 0.6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
@@ -176,6 +179,19 @@ textarea.form-control{
 	min-height: 82px;
 	padding-top: 10px;
 }
+.form-control[disabled],
+.form-control.disabled{
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-info{
+	font-size: 11px;
+	color: #aaa;
+	font-weight: 400;
+}
+.form-info .fa{
+	font-size: 12px;
+}
 /* ----- Input end ---- */
 .header{
 	position: fixed;
@@ -212,8 +228,8 @@ textarea.form-control{
 /* ==== Default components end ===== */
 
 /* ==== Guide-section start ===== */
-.guide-section form .form-control + .form-control{
-	margin-top: 10px;
+.guide-section form .form-control {
+	margin-bottom: 10px;
 }
 
 /* ==== Guide-section end ===== */
@@ -440,10 +456,14 @@ textarea.form-control{
 .latest-news-img:hover img{
 	filter: grayscale(0);
 }
-.latest-news .news-title,
+.latest-news .news-title a,
 .latest-news .speaker-and-date{
 	font-family: 'Dosis',sans-serif;
 	text-transform: uppercase;
+	display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }	
 .latest-news .news-title{
 	font-size: 15px;
@@ -455,7 +475,15 @@ textarea.form-control{
 	margin: 30px 0;
 	color: #777;
 }
-
 /* ------latest-news end ------ */
+/* ------Subscribe start------ */
+.subscribe form .form-control{
+	max-width: 290px;
+}
+.subscribe .form-info{
+	margin-top: 17px;
+}
+/* ------Subscribe end ------ */
+
 
 /* ==== Customs styles end ===== */
