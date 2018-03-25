@@ -325,8 +325,9 @@ textarea.form-control{
 /* ------about studio end------ */
 
 /* ------services------- */
-#tabs .tabs-nav li{
+#tabs .tabs-nav {
 	margin-bottom: 75px;
+	overflow: hidden;
 }
 #tabs .tabs-nav li{
 	float:left;
@@ -391,15 +392,14 @@ textarea.form-control{
 #tabs-portfolio .tabs-nav .ui-state-active{
 	color:#111;
 }
-#tabs-portfolio .row{
+#tabs-portfolio{
+	overflow: hidden;
 	margin: 0 -4px;
-	margin-bottom: 8px;
 }
-#tabs-portfolio .tabs-item {
+#tabs-portfolio .tabs-item{
 	width: 33.3333%;
-	height: 340px;
 	float: left;
-	padding: 0 4px;
+	padding: 0 4px;	
 }
 #tabs-portfolio .tabs-item img{
 	max-height: 100%;
