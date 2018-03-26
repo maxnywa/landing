@@ -39,6 +39,9 @@ textarea {
 	outline: none;
 	border: none;
 }
+button{
+	padding: 0;
+}
 textarea{
 	resize: vertical;
 }
@@ -103,6 +106,7 @@ blockquote{
 	letter-spacing: 0.3em;
 	margin-bottom: 20px;
 	font-weight: 300;
+	line-height: 1.44;
 }
 .default-text{
 	font-size: 15px;
@@ -435,6 +439,92 @@ textarea.form-control{
 }
 
 /* ------why-choose-us end ------ */
+
+/* ------reviews ------ */
+.reviews-slider{
+	padding: 135px 0;
+}
+.reviews-slider .icon{
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+.reviews-slider p{
+	font-size: 18px;
+	line-height: 1.6666;
+	margin: 0 auto 30px;
+	max-width: 740px;
+}
+.reviews-slider .review-author{
+	font-size: 11px;
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255,.75);
+	line-height: 3.45;
+	text-transform: uppercase;
+}
+.slick-dots{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;
+}
+.slick-dots li{
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255,.8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li button{
+	display: none;
+}
+.slick-dots li+li{
+	margin-left: 5px;
+}
+.slick-dots li.slick-active{
+	background-color: #000;
+	border-color: rgba(255, 255, 255,.8);
+}
+.slick-arrow{
+	position: absolute;
+	top:0;
+	height: 100%;
+	z-index: 1;
+}
+.slick-arrow.slick-prev{
+	left: 0;
+}
+.slick-arrow.slick-next{
+	right: 0;
+}
+
+.slick-arrow .slider-button{
+	width: 63px;
+	height: 63px;
+	background: #fff;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top:50%;
+	margin-left:-32px;
+	margin-top: -31px;
+}
+
+.slick-arrow .slider-button .fa{
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .slider-button .fa{
+	bottom: 16px;
+	right: 17px;
+}
+.slick-arrow.slick-next .slider-button .fa{
+	left: 16px;
+	top: 17px;
+}
+/* ------reviews end------ */
 
 /* ------ latest-news ------ */
 .latest-news .title.section-title a{
