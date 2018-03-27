@@ -70,6 +70,10 @@ blockquote{
 .bg-grey{
 	background-color: #f8f8f8;
 }
+.m-auto{
+	float: none;
+	margin: 0 auto;
+}
 /* ==== Default classes end ===== */
 
 /* ==== Default components start ===== */
@@ -180,7 +184,7 @@ blockquote span,
 	border-color: #111;
 }
 textarea.form-control{
-	min-height: 82px;
+	min-height: 85px;
 	padding-top: 10px;
 }
 .form-control[disabled],
@@ -196,6 +200,24 @@ textarea.form-control{
 .form-info .fa{
 	font-size: 12px;
 }
+.rhomb-icon{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.rhomb-icon i{
+	transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon{
+	color: #fff;
+	background-color: #111;
+}
+
 /* ----- Input end ---- */
 .header{
 	position: fixed;
@@ -379,6 +401,9 @@ textarea.form-control{
 	max-width: 750px;
 	margin: 0 auto;
 }
+.porfolio-tabs-wrapper{
+	overflow: hidden;
+}
 #tabs-portfolio .tabs-nav{
 	margin-bottom: 50px;
 }
@@ -443,6 +468,7 @@ textarea.form-control{
 /* ------reviews ------ */
 .reviews-slider{
 	padding: 135px 0;
+	overflow: hidden;
 }
 .reviews-slider .icon{
 	font-size: 32px;
@@ -491,6 +517,8 @@ textarea.form-control{
 	top:0;
 	height: 100%;
 	z-index: 1;
+	width: 90px;
+	cursor: pointer;
 }
 .slick-arrow.slick-prev{
 	left: 0;
@@ -510,6 +538,10 @@ textarea.form-control{
 	margin-left:-32px;
 	margin-top: -31px;
 }
+.slick-arrow.slick-next .slider-button{
+	right: 0;
+	margin-left: -31px;
+} 
 
 .slick-arrow .slider-button .fa{
 	position: absolute;
@@ -566,6 +598,8 @@ textarea.form-control{
 	color: #777;
 }
 /* ------latest-news end ------ */
+
+
 /* ------Subscribe start------ */
 .subscribe form .form-control{
 	max-width: 290px;
@@ -575,5 +609,37 @@ textarea.form-control{
 }
 /* ------Subscribe end ------ */
 
+
+/* ------Contact start------ */
+.contact .contact-items-wrapper{
+	margin-bottom: 80px;
+}
+.contact .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact .contact-item-content span{
+	display: block;
+}
+.contact .contact-item-content .contact-title{
+	font-family: 'Dosis',sans-serif;
+	text-transform: uppercase;
+	color: #777;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	font-weight: 400;
+}
+.contact .contact-item-content .contact-data{
+	line-height: 1.6;
+	color: #444;
+}
+.contact form .form-control{
+	margin-bottom: 15px;
+}
+.contact form .form-info{
+	line-height: 2.3636;
+}
+/* ------Contact end------ */
 
 /* ==== Customs styles end ===== */
