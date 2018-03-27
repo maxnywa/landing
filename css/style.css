@@ -540,7 +540,7 @@ textarea.form-control{
 }
 .slick-arrow.slick-next .slider-button{
 	right: 0;
-	margin-left: -31px;
+	margin-right: -31px;
 } 
 
 .slick-arrow .slider-button .fa{
