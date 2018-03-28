@@ -209,6 +209,7 @@ textarea.form-control{
 	border-radius: 2px;
 	font-size: 14px;
 	transform: rotate(45deg);
+	border: 1px solid transparent;
 }
 .rhomb-icon i{
 	transform: rotate(-45deg);
@@ -217,8 +218,13 @@ textarea.form-control{
 	color: #fff;
 	background-color: #111;
 }
-
+.rhomb-icon.transparent-icon{
+	color: #111;
+	border: 1px solid #2d2d2d;
+}
 /* ----- Input end ---- */
+
+/* ----- header ---- */
 .header{
 	position: fixed;
 	left: 0;
@@ -250,6 +256,35 @@ textarea.form-control{
 .header .header-nav li + li {
 	margin-left: 20px;
 }
+/* ----- header end ---- */
+/* ----- footer ---- */
+.footer .logo{
+	margin-bottom: 25px;
+}
+.footer .footer-nav li{
+	display: inline-block;
+	margin-bottom: 100px;
+}
+.footer .footer-nav li+li{
+	margin-left: 15px;
+}
+.footer .copyright span{
+	display: block;
+	font-weight: 400;
+	line-height: 2;
+}
+.footer .copyright span{
+	font-size: 11px;
+	color: #999;
+}
+.footer .copyright .company{
+	font-family: 'Dosis',sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #111;
+}
+/* ----- footer end ---- */
 
 /* ==== Default components end ===== */
 
@@ -611,18 +646,18 @@ textarea.form-control{
 
 
 /* ------Contact start------ */
-.contact .contact-items-wrapper{
+.contact .contact-item .contact-items-wrapper{
 	margin-bottom: 80px;
 }
-.contact .contact-item-content {
+.contact .contact-item .contact-item-content {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 15px;
 }
-.contact .contact-item-content span{
+.contact .contact-item .contact-item-content span{
 	display: block;
 }
-.contact .contact-item-content .contact-title{
+.contact .contact-item .contact-item-content .contact-title{
 	font-family: 'Dosis',sans-serif;
 	text-transform: uppercase;
 	color: #777;
@@ -630,7 +665,7 @@ textarea.form-control{
 	letter-spacing: 0.3em;
 	font-weight: 400;
 }
-.contact .contact-item-content .contact-data{
+.contact .contact-item .contact-item-content .contact-data{
 	line-height: 1.6;
 	color: #444;
 }
