@@ -74,6 +74,12 @@ blockquote{
 	float: none;
 	margin: 0 auto;
 }
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
 /* ==== Default classes end ===== */
 
 /* ==== Default components start ===== */
@@ -171,7 +177,7 @@ blockquote span,
 	width: 100%;
 	border: 1px solid #e5e5e5;
 	border-radius: 2px;
-	height: 36px;
+	height: 40px;
 	font-size: 12px;
 	font-family: 'Open Sans';
 	font-weight: 400;
@@ -184,7 +190,7 @@ blockquote span,
 	border-color: #111;
 }
 textarea.form-control{
-	min-height: 85px;
+	min-height: 90px;
 	padding-top: 10px;
 }
 .form-control[disabled],
@@ -222,6 +228,10 @@ textarea.form-control{
 	color: #111;
 	border: 1px solid #2d2d2d;
 }
+.rhomb-icon.white-icon{
+	color: #111;
+	background-color: #fff;
+}
 /* ----- Input end ---- */
 
 /* ----- header ---- */
@@ -258,12 +268,17 @@ textarea.form-control{
 }
 /* ----- header end ---- */
 /* ----- footer ---- */
+.footer{
+	padding: 140px 0 60px;
+}
 .footer .logo{
 	margin-bottom: 25px;
 }
-.footer .footer-nav li{
-	display: inline-block;
+.footer .footer-nav{
 	margin-bottom: 100px;
+}
+.footer .footer-nav li{
+	display: inline-block;	
 }
 .footer .footer-nav li+li{
 	margin-left: 15px;
@@ -514,11 +529,12 @@ textarea.form-control{
 	line-height: 1.6666;
 	margin: 0 auto 30px;
 	max-width: 740px;
+	color:#fff;
 }
 .reviews-slider .review-author{
 	font-size: 11px;
 	letter-spacing: 0.2em;
-	color: rgba(255, 255, 255,.75);
+	color: rgba(255, 255, 255,.3);
 	line-height: 3.45;
 	text-transform: uppercase;
 }
@@ -646,7 +662,7 @@ textarea.form-control{
 
 
 /* ------Contact start------ */
-.contact .contact-item .contact-items-wrapper{
+.contact .contact-items-wrapper{
 	margin-bottom: 80px;
 }
 .contact .contact-item .contact-item-content {
@@ -669,12 +685,63 @@ textarea.form-control{
 	line-height: 1.6;
 	color: #444;
 }
-.contact form .form-control{
-	margin-bottom: 15px;
+.contact .contact-form{
+	margin: 0 -5px;
+	overflow: hidden;
 }
-.contact form .form-info{
-	line-height: 2.3636;
+.contact .contact-form .form-col{
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+}
+.contact .contact-form .form-control + .form-control{
+	margin-top: 10px;
+}
+.contact .contact-form .form-info{
+	line-height: 40px;
+	margin-top: 20px;
+}
+.contact .contact-form button{
+	margin-top: 20px;
 }
 /* ------Contact end------ */
+/* ------Map start------ */
+#map{
+	height: 410px;
+}
+.map-container{
+	position: relative;
+}
+.map-container .on-map-block-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.9);
+	height: 100%;
+	width: 100%;
+}
+.map-container .on-map-block{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.map-container:hover .on-map-block-wrapper{
+	display: none;
+}
+.map-container .on-map-block .rhomb-icon{
+	margin-bottom: 25px;
+}
+.map-container .on-map-block span{
+	font-size: 16px;
+	letter-spacing: 0.3em;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Dosis',sans-serif;
+	text-transform: uppercase;
+	display: block;
+}
+/* ------Map end------ */
+
 
 /* ==== Customs styles end ===== */
