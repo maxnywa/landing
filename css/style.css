@@ -185,6 +185,15 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+@media(max-width:576px){
+	.btn{
+		width: 100%;
+	}
+	.btn.btn-xs{
+		width: auto;
+	}
+	
+}
 /*----- Buttons end ----- */
 /* ----- Input----- */
 
@@ -340,6 +349,15 @@ textarea.form-control{
 	text-transform: uppercase;
 	color: #111;
 }
+@media(max-width:767px){
+	.footer{
+		padding: 100px 0 40px;
+	}
+	.footer .footer-nav{
+		margin-bottom: 70px;
+	}
+}
+
 /* ----- footer end ---- */
 
 /* ==== Default components end ===== */
@@ -410,6 +428,15 @@ textarea.form-control{
 		font-size: 15px;
 	}
 
+}
+@media (max-width: 576px){
+	.inner-content .title{
+		font-size: 20px;
+	}
+	.inner-content span {
+    padding: 0 15px;
+    line-height: 1.5;
+	}
 }
 /* ------inner--------- */
 /* ------about studio-------- */
@@ -530,7 +557,7 @@ textarea.form-control{
 		font-size: 12px;
 	}
 	.team-item .team-item-role{
-		font-size: 9px;
+		font-size: 10px;
 	}
 }
 @media(max-width:767px){
@@ -549,9 +576,11 @@ textarea.form-control{
 }
 @media(max-width:576px){
 	.team-item .team-item-img .team-item-skills{
-		width: 85%;
+		width: 100%;
+		padding: 40px;
 	}
 }
+
 /* ------about studio end------ */
 
 /* ------services------- */
@@ -598,11 +627,20 @@ textarea.form-control{
 		margin-bottom: 45px;
 	}
 	#tabs .tabs-nav {
-		margin-bottom: 0;}
-}
+		margin-bottom: 0;
+	}
 	.tabs-wrapper .row .col:last-child p.default-text:last-child{
 		margin-top: 30px;
 	}
+}
+@media(max-width:576px){
+	#tabs .tabs-nav li .icon-title{
+		font-size: 11px;
+		letter-spacing: 0.2em;
+	}
+}
+	
+
 /* ------services end------ */
 
 /* ------lets-talk-content------ */
@@ -623,6 +661,14 @@ textarea.form-control{
 	.lets-talk-content{
 		text-align-last: center;
 		padding: 70px 0;
+	}
+}
+@media(max-width:576px){
+	.lets-talk-content .title{
+		text-align: center;
+	}
+	.lets-talk-content p{
+		text-align: justify;
 	}
 }
 /* ------lets-talk-content end------ */
@@ -680,15 +726,17 @@ textarea.form-control{
 }
 @media(max-width:767px){
 	#tabs-portfolio .tabs-nav li{
-		font-size: 11px;
+		display: block;
 	}
 	#tabs-portfolio .tabs-nav li+li{
-		margin-left: 20px;
+		margin-left: 0px;
+		margin-top: 15px;
 	}
 	#tabs-portfolio .tabs-item{
 		width: 100%;
 	}
 }
+
 /* ------portfolio end------ */
 
 
@@ -834,6 +882,18 @@ textarea.form-control{
 		color:#fff;
 	}
 }
+@media(max-width:576px){
+	.reviews-slider{
+		padding: 75px 0;
+	}
+	.reviews-slider p{
+		font-size: 13px;
+		line-height: 1.6666;
+		margin: 0 auto 10px;
+		max-width: 200px;
+		color:#fff;
+	}
+}
 /* ------reviews end------ */
 
 /* ------ latest-news ------ */
@@ -872,6 +932,11 @@ textarea.form-control{
 	display: block;
 	margin-bottom: 15px;
 }
+.latest-news .latest-news-item .news-title span{
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	color: #999;
+}
 .latest-news .latest-news-item p{
 	margin-bottom: 30px;
 	color: #777;
@@ -882,10 +947,19 @@ textarea.form-control{
 		padding-bottom: 30px;
 		border-bottom: 2px solid rgba(236,236,236,0.92);
 	}
+	.latest-news .col:last-child .latest-news-item{
+		margin-bottom: 0px;
+	}
 	.latest-news .latest-news-item .latest-news-img img{
 		width: 100%;
 	}
 }
+@media(max-width:576px){
+	.latest-news .title.section-title a{
+		margin-top: 30px;
+	}
+}
+
 /* ------latest-news end ------ */
 
 
@@ -895,6 +969,14 @@ textarea.form-control{
 }
 .subscribe .form-info{
 	margin-top: 17px;
+}
+@media(max-width:576px){
+	.subscribe form .form-control{
+		max-width: 100%;
+	}
+	.subscribe form .form-control{
+		margin-bottom: 15px;
+	}
 }
 /* ------Subscribe end ------ */
 
@@ -947,9 +1029,33 @@ textarea.form-control{
 }
 }
 @media(max-width:767px){
+	.contact .contact-items-wrapper{
+		margin-bottom: 60px;
+	}
+	.contact .contact-items-wrapper .contact-item{
+		text-align: center;
+	}
+	.contact .contact-item .contact-item-content{
+		display: block;
+		margin: 30px 0;
+	}
+	.contact .contact-items-wrapper .col:last-child .contact-item-content{
+		margin-bottom: 0;
+	}
+	.contact .contact-item-content .contact-title{
+		margin-bottom: 5px;
+	}
 	.contact .contact-form .form-col{
 		width: 100%;
 	}
+	.contact .contact-form .form-control + .form-control{
+		margin-top: 0;
+	}
+	.contact .contact-form .form-col:first-child .form-control{
+		margin-bottom: 10px;
+	}
+	
+
 }
 /* ------Contact end------ */
 /* ------Map start------ */
@@ -1006,6 +1112,11 @@ textarea.form-control{
 	font-family: 'Dosis',sans-serif;
 	text-transform: uppercase;
 	display: block;
+}
+@media(max-width:576px){
+	#map{
+		height: 310px;
+	}
 }
 /* ------Map end------ */
 
