@@ -11,8 +11,8 @@
 	    if (pos > headerHeight + 100) {
 	        header.css({
 	            'position': 'fixed',
-	            'top' : `-${headerHeight}px`,
-	            'background': '#000'
+	            'top' : `-${headerHeight+20}px`,
+	            'background': '#2d2d2d'
 	        });
 	    }
 	    if (pos > windowHeight) {
