@@ -468,6 +468,7 @@ textarea.form-control{
 }
 .team-item .team-item-img:hover .team-item-skills{
 	opacity: 1;
+	transition: width .5s ease-out;
 }
 .team-item .team-item-skills p{
 	font-size: 13px;
@@ -537,18 +538,20 @@ textarea.form-control{
 .team-item .team-item-role{
 	font-size: 12px;
 }
+@media(max-width:1200px){
+	.team-item .team-item-img .team-item-skills{
+		padding: 20px 40px;
+	}
+	.team-item .team-item-skills p{
+		margin-bottom: 0;
+	}
+}
 @media(max-width:991px){
 	.team-item{
 		margin-bottom: 50px;
 	}
 	.team-wrapper .col:last-child .team-item{
 		margin-bottom: 0;
-	}
-	.team-item .team-item-img .team-item-skills{
-		padding: 20px;
-	}
-	.team-item-skills .skill-item+.skill-item{
-		margin-top: 15px;
 	}
 	.team-item .team-item-skills p{
 		display: none;
@@ -567,6 +570,11 @@ textarea.form-control{
 	.about-stydio .team-wrapper .team-item{
 		text-align: center;
 	}
+	.team-item .team-item-skills p{
+		display: block;
+		margin-bottom: 20px;
+		text-align: left
+	}
 	.team-item .team-item-img .team-item-skills{
 		padding: 60px;
 		width: 75%;
@@ -580,7 +588,14 @@ textarea.form-control{
 		padding: 40px;
 	}
 }
-
+@media(max-width:479px){
+	.team-item .team-item-skills p{
+		display: none;
+	}
+	.team-item .team-item-skills .skill-item + .skill-item{
+		margin-top: 10px;
+	}
+}
 /* ------about studio end------ */
 
 /* ------services------- */
