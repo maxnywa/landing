@@ -11,7 +11,7 @@
 	    if (pos > headerHeight + 100) {
 	        header.css({
 	            'position': 'fixed',
-	            'top' : `-${headerHeight+20}px`,
+	            'top' : `-${headerHeight}px`,
 	            'background': '#2d2d2d'
 	        });
 	    }
@@ -33,5 +33,6 @@
 	}
 
 	$(window).on('scroll', onScroll);
+	$(window).on('load', onScroll);
 
 })(jQuery);
