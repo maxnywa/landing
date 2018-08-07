@@ -891,22 +891,33 @@ textarea.form-control{
 	}
 	.reviews-slider p{
 		font-size: 16px;
-		line-height: 1.6666;
-		margin: 0 auto;
 		max-width: 450px;
-		color:#fff;
 	}
 }
-@media(max-width:576px){
-	.reviews-slider{
+@media(max-width:576px) {
+	.reviews-slider {
 		padding: 75px 0;
 	}
-	.reviews-slider p{
+
+	.reviews-slider p {
 		font-size: 13px;
-		line-height: 1.6666;
-		margin: 0 auto 10px;
-		max-width: 200px;
-		color:#fff;
+		padding: 0 35px;
+	}
+
+	.slick-arrow .slider-button {
+		width: 53px;
+		height: 53px;
+		margin-top: -15px;
+	}
+
+	.slick-arrow.slick-prev .slider-button .fa {
+		bottom: 14px;
+		right: 14px;
+	}
+
+	.slick-arrow.slick-next .slider-button .fa {
+		left: 14px;
+		top: 14px;
 	}
 }
 /* ------reviews end------ */
@@ -972,6 +983,7 @@ textarea.form-control{
 @media(max-width:576px){
 	.latest-news .title.section-title a{
 		margin-top: 30px;
+		width: 100%;
 	}
 }
 
@@ -1039,9 +1051,9 @@ textarea.form-control{
 	line-height: 40px;
 }
 @media(max-width:1200px){
-.contact .contact-item .contact-item-content .contact-data{
-	font-size: 13px;
-}
+	.contact .contact-item .contact-item-content .contact-data{
+		font-size: 13px;
+	}
 }
 @media(max-width:767px){
 	.contact .contact-items-wrapper{
@@ -1069,9 +1081,8 @@ textarea.form-control{
 	.contact .contact-form .form-col:first-child .form-control{
 		margin-bottom: 10px;
 	}
-	
-
 }
+
 /* ------Contact end------ */
 /* ------Map start------ */
 #map{
@@ -1128,11 +1139,13 @@ textarea.form-control{
 	text-transform: uppercase;
 	display: block;
 }
+
 @media(max-width:576px){
 	#map{
 		height: 310px;
 	}
 }
+
 /* ------Map end------ */
 
 
